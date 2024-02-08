@@ -1,0 +1,17 @@
+.container {
+  height: 100vh;
+  max-width: 100vw;
+  display: grid;
+  grid-template-columns: 350px 1fr;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  height: 100%;
+  // background-color: #0f4c5e;
+}
+

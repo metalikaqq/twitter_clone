@@ -1,0 +1,28 @@
+// .main {
+//   height: 100%;
+//   width: 100%;
+//   display: grid;
+//   grid-template-columns: 2fr 1fr;
+
+//   @media (min-width: 1600px) {
+//     grid-template-columns: 1.6fr 1fr;
+//   }
+
+//   &__functional {
+//     padding: 25px;
+//     display: flex;
+//     flex-direction: column;
+//     gap: 20px;
+//   }
+
+//   &__advertising {
+//     padding: 20px;
+//   }
+// }
+
+.main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}

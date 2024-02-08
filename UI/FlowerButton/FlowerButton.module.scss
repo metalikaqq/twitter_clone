@@ -1,0 +1,23 @@
+.button {
+  overflow: hidden;
+  border-radius: 7px;
+  width: fit-content;
+
+  box-shadow: inset 0px 5px 5px 0px rgba(0, 0, 0, 0.15);
+  background: rgb(149, 109, 132);
+  padding: 22px 70px;
+
+  color: white;
+  font-size: 16px;  
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0%;
+  text-align: center;
+  position: relative;
+
+  &__image {
+    position: absolute;
+    bottom: -40px;
+    right: -45px;
+  }
+}

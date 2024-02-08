@@ -1,0 +1,43 @@
+@import '../../utils/vars.scss';
+
+.banner {
+  &__text {
+    margin-left: 20px;
+  }
+
+  &__title {
+    font-size: 50px;
+    font-weight: 700;
+    // color: #0f4c5e;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+
+    &__text {
+      margin-top: 10px;
+    }
+  }
+
+  &__description {
+    font-size: 20px;
+    font-weight: 400;
+    // color: #0f4c5e;
+    margin-bottom: 10px;
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+    // height: 300px;
+    width: 100%;
+    border-radius: 20px;
+    padding: 30px;
+    background-color: $light-blue;
+    // background-color: #e0f9fe;
+  }
+
+  &__img {
+    width: 200px;
+    height: 200px;
+  }
+}

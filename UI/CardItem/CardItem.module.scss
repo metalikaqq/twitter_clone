@@ -1,0 +1,86 @@
+@import "../../utils/vars2.scss";
+
+.card {
+  width: 340px;
+  // height: 550px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+
+  border: 1px solid $burgundy;
+  box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.1);
+
+  &__top {
+    width: 100%;
+    height: 320px;
+    background-color: $light-pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__image {
+    width: 300px;
+    // height: 380px;
+  }
+
+  &__info {
+    padding: 25px;
+    // padding: 0 25px;
+
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    gap: 30px;
+  }
+
+  &__description {
+    // margin-top: 50px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__title {
+    color: $main-font-gray;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 18px;
+    letter-spacing: 0%;
+    text-align: left;
+  }
+
+  &__price {
+    color: $burgundy;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 0%;
+    text-align: left;
+  }
+
+  &__functional {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 16px;
+  }
+
+  &__button {
+    color: #828282;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+  }
+}
+
+.underline {
+  width: 100%;
+  height: 1px;
+  background-color: #828282;
+}

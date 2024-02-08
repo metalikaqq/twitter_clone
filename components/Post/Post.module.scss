@@ -1,0 +1,97 @@
+@import "../../utils/vars.scss";
+@import "../../utils/mixins.scss";
+
+.post {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-radius: 20px;
+  padding: 30px;
+  border: 1px solid $border-color;
+
+  gap: 20px;
+
+  &__user {
+    display: flex;
+    gap: 10px;
+
+    &__avatar {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+    }
+
+    &__text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 7px;
+    }
+
+    &__name {
+      font-weight: 700;
+      font-size: 19px;
+    }
+
+    &__date {
+      font-size: 14px;
+      color: $main-gray;
+    }
+  }
+
+  &__input {
+    border-radius: 10px;
+    border: 1px solid $border-color;
+    padding: 10px;
+    resize: none;
+    outline: none;
+    background-color: $light-blue;
+
+    font-size: 18px;
+    font-weight: 500;
+    font-family: '__Kanit_f0c4f1', '__Kanit_Fallback_f0c4f1';
+  }
+
+  &__review {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+    &__text {
+      color: #666972;
+    }
+  }
+
+  &__likes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+      transform: scale(1.1);
+      transition: all 0.3s ease;
+    }
+
+    &__img {
+      width: 26px;
+      height: 26px;
+      margin-top: 5px;
+      margin-right: 5px;
+    }
+  }
+
+  &__comments {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+      transform: scale(1.1);
+      transition: all 0.3s ease;
+    }
+
+    &__img {
+      margin-right: 3px;
+    }
+  }
+}

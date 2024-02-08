@@ -1,0 +1,23 @@
+@import "../../utils/vars";
+
+.button {
+  background-color: $main-blue;
+  border: none;
+  color: white;
+  padding: 13px 17px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: all 0.3s ease; /* Добавляем плавную анимацию */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Добавляем тень для улучшения внешнего вида */
+
+  &:hover {
+    background-color: darken($main-blue, 40%);
+    transform: scale(1.05); /* Увеличиваем кнопку при наведении */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4); /* Увеличиваем тень при наведении */
+  }
+}

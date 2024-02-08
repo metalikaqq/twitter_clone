@@ -1,0 +1,17 @@
+@import '../../utils/vars.scss';
+@import '../../utils/mixins.scss';
+
+.header {
+  height: 110px;
+  background-color: $main-bg;
+  border: 1px solid $border-color;
+  border-left: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  &__button {
+    margin-right: 15px;
+  }
+}
