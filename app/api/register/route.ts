@@ -3,7 +3,7 @@ import UserService from "@/server/services/user-service";
 import connect from "../../../db";
 import { NextResponse } from "next/server";
 
-export default async function handler(req: any) {
+export async function POST(req: any) {
   try {
     await connect();
 
@@ -39,11 +39,3 @@ export default async function handler(req: any) {
     });
   }
 }
-
-export const config = {
-  api: {
-    bodyParser: false, 
-  },
-};
-
-export const POST = handler;
